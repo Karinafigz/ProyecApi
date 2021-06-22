@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+  </style>
+<body bgcolor="green">
+  <H1 align="center">REGISTRO DE TRABAJADOR </H1>
+    <form action="http://localhost:3002/api/trabajador"method="post" target="_blank">
+        <font color="white" for="id">ID:</font>
+        <input type="text" id="id" name="id"><br><br>
+        <font color="white" for="nombre">Nombre:</font>
+        <input type="text" id="name" name="name"><br><br>
+        <font color="white" for="email">Correo:</font>
+        <input type="text" id="email" name="email"><br><br>
+        <font color="white" for="phone">Teléfono:</font>
+        <input type="text" id="phone" name="phone"><br><br>
+        <font color="white" for="job">Lugar de trabajo:</font>
+        <input type="text" id="job" name="job"><br><br>
+        <font color="white" for="user">Usuario:</font>
+        <input type="text" id="user" name="user"><br><br>
+        <button id="btnagregar" type="submit" style=background-color:brown> Agregar</button>
+      </form>     
+      <form action="http://localhost:3002/api/trabajador" method="GET" target="_blank">
+        <button id="btnlistar" type="submit" style=background-color:brown>Listar</button>
+      </form>
+      <form action="http://localhost:3002/api/trabajador/+" method="GET" target="_blank" name="buscar" id="buscar">
+        <input type="text" id="id" name="id"><br><br>
+        <button type="submit" style=background-color:brown>Buscar</button>
+      </form>
+</html>
